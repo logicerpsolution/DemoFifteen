@@ -24,7 +24,6 @@
         "list": {
             "prototype": "digit/ui/list.reel",
             "properties": {
-                "element": {"#": "list"},
                 "content": [
                     "",
                     "",
@@ -43,6 +42,16 @@
                 "draggable": "true",
                 "shouldLoadComponentTree": true,
                 "switchValue": "route"
+            },
+            "bindings": {
+                "#signin": {"<-": "signin"}
+            }
+        },
+        "textArea": {
+            "prototype": "digit/ui/text-area.reel",
+            "properties": {
+                "element": {"#": "textArea"},
+                "value": "Text"
             }
         }
     }
@@ -50,12 +59,10 @@
 </head>
 <body>
     <div data-montage-id="main" data-montage-skin="light" class="Main">
-        <ul data-montage-id="list">
-            <li></li>
-        </ul>
         <div data-montage-id="substitution">
             <button data-montage-id="button"></button>
         </div>
+        <textarea data-montage-id="textArea"></textarea>
     </div>
 </body>
 </html>

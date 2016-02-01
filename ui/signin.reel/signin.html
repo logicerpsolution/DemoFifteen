@@ -9,12 +9,31 @@
             "properties": {
                 "element": {"#": "owner"}
             }
+        },
+        "checkbox": {
+            "prototype": "digit/ui/checkbox.reel",
+            "properties": {
+                "element": {"#": "checkbox"},
+                "checked": true
+            }
+        },
+        "substitution": {
+            "prototype": "montage/ui/substitution.reel",
+            "properties": {
+                "element": {"#": "substitution"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true"
+            }
         }
     }
     </script>
 </head>
 <body>
     <div data-montage-id="owner" class="Signin">
+        <div data-montage-id="substitution">
+            <input type="checkbox" data-montage-id="checkbox">
+        </div>
     </div>
 </body>
 </html>
